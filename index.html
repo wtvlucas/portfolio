@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="icon" href="./assets/icons/windows98.png" type="image/x-icon">
+      <title>Lucas Lima - Game Developer</title>
+   </head>
+   <body>
+      <div class="window">
+         <div class="title-bar">
+            <div class="window-image"><img src="./assets/icons/explorer.png" alt=""></div>
+            <div class="window-title">portfolio.html - Microsoft Internet Explorer</div>
+            <div class="window-controls">
+               <div class="control-btn">_</div>
+               <div class="control-btn">□</div>
+               <div class="control-btn">×</div>
+            </div>
+         </div>
+         <div class="container">
+            <nav class="sidebar">
+               <div class="profile">
+                  <h1>Lucas Lima</h1>
+                  <div class="title">Game Developer</div>
+                  <div class="showcase">'25</div>
+               </div>
+               <ul class="nav-menu">
+                  <li class="nav-item">
+                     <button class="nav-link active" data-section="home">HOME</button>
+                  </li>
+                  <li class="nav-item">
+                     <button class="nav-link" data-section="about">ABOUT</button>
+                  </li>
+                  <li class="nav-item">
+                     <button class="nav-link" data-section="projects">PROJECTS</button>
+                     <div class="nav-category">
+                        <button class="nav-link nav-subitem category-item" data-section="projects" data-category="games">GAMES</button>
+                        <div class="nav-projects">
+                           <button class="nav-link nav-subitem project-item" data-section="projects" data-project="kindergarten-hell">Kindergarten Hell</button>
+                           <button class="nav-link nav-subitem project-item" data-section="projects" data-project="holy-temptation">Holy Temptation</button>
+                           <button class="nav-link nav-subitem project-item" data-section="projects" data-project="lillys">Lillys Thrift Store</button>
+                        </div>
+                        <button class="nav-link nav-subitem category-item" data-section="projects" data-category="other">OTHER</button>
+                        <div class="nav-projects">
+                           <button class="nav-link nav-subitem project-item" data-section="projects" data-project="3d-room">3d Low Polly Room</button>
+                           <button class="nav-link nav-subitem project-item" data-section="projects" data-project="3d-animations">3D Model & Animations</button>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </nav>
+            <main class="main-content">
+               <section id="home" class="content-section active">
+                  <div class="minimal-home">
+                     <h1 class="minimal-title">Lucas Lima</h1>
+                     <h2 class="minimal-subtitle">Game Developer</h2>
+                     <nav class="minimal-nav">
+                        <a href="#" class="nav-link" data-section="about">ABOUT</a>
+                        <a href="#" class="nav-link" data-section="projects">PROJECTS</a>
+                     </nav>
+                  </div>
+               </section>
+               <section id="about" class="content-section">
+                  <h1 class="section-title">About</h1>
+                  <div class="about-wrapper">
+                     <div class="profile-section">
+                        <div class="profile-image">
+                           <img src="./assets/images/me.jpg" alt="Lucas Lima">
+                        </div>
+                        <div class="social-buttons">
+                           <div class="" onclick="window.open('https://github.com/wtvlucas', '_blank')">
+                              <div class="category-header">
+                                 <div class="category-icon">
+                                    <img src="./assets/icons/github.png" alt="GitHub">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="" onclick="window.open('https://www.linkedin.com/in/lucazin/', '_blank')">
+                              <div class="category-header">
+                                 <div class="category-icon">
+                                    <img src="./assets/icons/linkedin.webp" alt="LinkedIn">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="" onclick="showEmailPopup()">
+                              <div class="category-header">
+                                 <div class="category-icon">
+                                    <img src="./assets/icons/email.png" alt="Email">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="about-content">
+                        <p>
+                           I’m a passionate game developer with a strong focus on programming and a deep appreciation for game art. I began coding at the age of 15, starting with simple HTML and CSS out of pure curiosity and a desire to learn. Since then, I’ve expanded my skill set to include scripting in Lua for FiveM, as well as developing games in Godot using GDScript and in Unity with C#. Currently, I’m diving into Unreal Engine, learning both Blueprints and C++.
+                        </p>
+                        <p>
+                           My main strength lies in game programming—whether it’s building core mechanics, optimizing performance, or crafting gameplay systems—but I also have a creative side. I’ve been passionate about graffiti since I was young, and that love for visual expression continues to inspire the artistic aspects of my work.
+                        </p>
+                        <p>
+                           I'm 20 years old and currently in my second year of the Videogames and Multimedia Applications (VAM) program at Universidade Lusófona. Alongside my studies, I’m currently working at a company that supplies refurbished electronic devices, where I’m responsible for handling and managing RMAs (Return Merchandise Authorizations).
+                        </p>
+                        <p>
+                           My goal is to create games that are not only technically solid but also capable of delivering meaningful and memorable experiences to players.
+                        </p>
+                     </div>
+                  </div>
+               </section>
+               <section id="projects" class="content-section">
+                  <div id="categories-view">
+                     <h1 class="section-title">PROJECTS</h1>
+                     <div class="projects-intro">
+                        List of projects I've worked on, organized by category. Click on a project to see more details.
+                     </div>
+                     <h2 class="projects-category-title" data-category="games">GAMES</h2>
+                     <div class="projects-grid" data-category="games">
+                        <div class="project-category" onclick="showProjectDetails('kindergarten-hell')">
+                           <div class="category-header">
+                              <div class="category-icon"> <img src="./assets/projects/hell_logo.png" alt="Kindergarten Hell Icon"></div>
+                              <div>
+                                 <div class="category-title">Kindergarten Hell</div>
+                                 <div class="category-subtitle">2D PUZZLE GAME</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="project-category" onclick="showProjectDetails('holy-temptation')">
+                           <div class="category-header">
+                              <div class="category-icon"> <img src="./assets/projects/holy_logo.png" alt="Holy Temptation Icon"></div>
+                              <div>
+                                 <div class="category-title">HOLY TEMPTATION</div>
+                                 <div class="category-subtitle">2D SHOOTER</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="project-category" onclick="showProjectDetails('lillys')">
+                           <div class="category-header">
+                              <div class="category-icon"> <img src="./assets/projects/Lillys.png" alt="Lillys"></div>
+                              <div>
+                                 <div class="category-title">LILLYS THRIFT STORE</div>
+                                 <div class="category-subtitle">3D THRIFT STORE SIMULATOR</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <h2 class="projects-category-title" data-category="other">OTHER PROJECTS</h2>
+                     <div class="projects-grid" data-category="other">
+                        <div class="project-category" onclick="showProjectDetails('3d-room')">
+                           <div class="category-header">
+                              <div class="category-icon"><img src="./assets/images/LowPollyRoomNoBg.png" alt="3d Room"></div>
+                              <div>
+                                 <div class="category-title">3D Low Polly Room</div>
+                                 <div class="category-subtitle">My room as low polly model</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="project-category" onclick="showProjectDetails('3d-animations')">
+                           <div class="category-header">
+                              <div class="category-icon"><img src="./assets/images/meModel.png" alt="3d Model & Animations"></div>
+                              <div>
+                                 <div class="category-title">3D Model & Animations</div>
+                                 <div class="category-subtitle">Animation and 3D Modeling</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="project-details" class="project-details" style="display: none;">
+                     <button class="back-button" onclick="showCategories()">← PROJECTS</button>
+                     <h1 id="project-title" class="section-title"></h1>
+                     <h2 class="section-subtitle" id="project-subtitle">Project Details</h2>
+                     <div class="project-content">
+                        <div class="project-sidebar">
+                           <div class="social-buttons">
+                              <div class="project-layout">
+                                 <div id="project-links">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="project-main">
+                           <img id="project-image" class="project-image" src="./assets/images/placeholder.png" alt="Project Screenshot">
+                           <p id="project-description" class="project-description"></p>
+                           <div class="project-info">
+                              <div class="tech-stack">
+                                 <h3>Technology</h3>
+                                 <p id="project-tech"></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+         </div>
+         </section>
+         </main>
+      </div>
+      <div id="playModal" class="modal">
+         <div class="modal-window play-window">
+            <div class="modal-title-bar">
+               <span id="playWindowTitle">Play Game</span>
+               <div class="window-controls">
+                  <div class="control-btn" onclick="closePlayModal()">×</div>
+               </div>
+            </div>
+            <div class="modal-content play-content">
+               <iframe id="playFrame" frameborder="0" allow="autoplay"></iframe>
+            </div>
+         </div>
+      </div>
+      <div class="status-bar">
+         <span class="status-text">Lucas Lima © All rights reserved | 2025</span>
+      </div>
+      </div>
+      <div id="projectModal" class="modal">
+         <div class="modal-window">
+            <div class="modal-title-bar">
+               <span id="modalWindowTitle">Detalhes do Projeto</span>
+               <div class="window-controls">
+                  <div class="control-btn" onclick="closeModal()">×</div>
+               </div>
+            </div>
+            <div class="modal-content">
+               <h2 id="modalTitle" class="modal-project-title"></h2>
+               <p id="modalDescription" class="modal-description"></p>
+               <p class="modal-tech"><strong>Technology:</strong> <span id="modalTech"></span></p>
+            </div>
+         </div>
+      </div>
+      <div id="emailPopup" class="modal">
+         <div class="modal-window">
+            <div class="modal-title-bar">
+               <div>Email Contact</div>
+               <div class="control-btn" onclick="closeEmailPopup()">×</div>
+            </div>
+            <div class="modal-content">
+               <p class="modal-text">flimaluca@gmail.com</p>
+            </div>
+         </div>
+      </div>
+      <script src="assets/js/script.js"></script>
+   </body>
+</html>
